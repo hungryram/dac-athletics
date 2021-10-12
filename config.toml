@@ -1,4 +1,4 @@
-baseURL = "https://kravenutrition.netlify.app"
+baseURL = "https://dac-athletics.netlify.app/"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 enableRobotsTXT = "true"
 languageCode = "en-us"
