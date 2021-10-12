@@ -1,0 +1,16 @@
+baseURL = "https://kravenutrition.netlify.app"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+enableRobotsTXT = "true"
+languageCode = "en-us"
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+[[menu.main]]
+name = "Programs"
+url = "/menu"
+weight = 2
