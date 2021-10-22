@@ -25,14 +25,13 @@ body .uk-heading-xlarge {
 
 body {
     font-family: 'Mulish', sans-serif;
-    color: #777;
     font-size: 15px;
     line-height: 27px;
 }
 
 html body {
     font-size: 16px;
-    color: #252525;
+    color: #9c9c9c;
 }
 
 .main__content a {
