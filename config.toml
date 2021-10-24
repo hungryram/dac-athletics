@@ -12,5 +12,5 @@ url = "/"
 weight = 1
 [[menu.main]]
 name = "Programs"
-url = "/menu"
+url = "/programs"
 weight = 2

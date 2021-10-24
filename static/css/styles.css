@@ -26,6 +26,7 @@ body .uk-heading-xlarge {
 body {
     font-family: 'Mulish', sans-serif;
     line-height: 27px;
+    background: #000;
 }
 
 html body {
