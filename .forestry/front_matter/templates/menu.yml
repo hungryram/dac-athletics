@@ -111,5 +111,3 @@ fields:
     max: 
     labelField: 
   label: Tea Add Ons
-pages:
-- content/menu/_index.md
