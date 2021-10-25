@@ -22,9 +22,13 @@ sections:
   - pages
 - type: heading
   label: Default Pages
-- type: document
-  path: content/menu/_index.md
-  label: Menu
+- type: directory
+  path: content/programs
+  label: Programs
+  create: documents
+  match: "**/*"
+  templates:
+  - programs
 - type: document
   path: content/about/_index.md
   label: About
