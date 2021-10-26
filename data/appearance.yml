@@ -2,6 +2,10 @@
 branding:
   site_title: RN Insurance
   logo: https://res.cloudinary.com/hungryram19/image/upload/v1634019454/darius-clark/yellow-logo.jpg
-  dark_logo: https://res.cloudinary.com/hungryram19/image/upload/v1631038495/randy-nong/rn-insurance/rn-insurance_cayd4v.png
-  favicon: https://res.cloudinary.com/hungryram19/image/upload/v1633192260/aj-garcia/krave-favicon.png
-  logo_width:
+  dark_logo: ''
+  favicon: https://res.cloudinary.com/hungryram19/image/upload/v1635269195/darius-clark/Screen_Shot_2021-10-26_at_10.26.29_AM_betwat.png
+  logo_width: 
+footer:
+  footer_bio: ''
+  disclaimer: ''
+  important_documents: []
