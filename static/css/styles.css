@@ -23,6 +23,7 @@ body .uk-heading-xlarge {
     letter-spacing: 1.4px;
 }
 
+
 body {
     font-family: 'Mulish', sans-serif;
     line-height: 27px;
@@ -34,12 +35,12 @@ html body {
     color: #9c9c9c;
 }
 
-.main__content a {
-    color: #aa0817;
+.md__content a {
+    color: #F8F026;
     text-decoration: underline;
 }
 
-.main__content a:hover {
+.md__content a:hover {
     color: inherit;
 }
 
@@ -91,14 +92,15 @@ a.uk-button-secondary:hover {
 }
 
 .accent {
-    color: #aa0817;
+    color: ##F8F026;
 }
 
 .uk-white {
     color: #fff!important;
 }
 
-input.uk-input {
+input.uk-input,
+textarea.uk-textarea {
     background-color: transparent;
     border-bottom: 1px solid white;
     border-top: 0;
@@ -108,9 +110,9 @@ input.uk-input {
 
 button.uk-button-primary,
 a.uk-button-primary {
-    background: #000;
+    background: #fff;
     padding: 5px 40px;
-    color: #FFF;
+    color: #222;
     display: inline-block;
     font-size: 14px;
     -webkit-transition: ease-out 0.6s;
@@ -144,7 +146,7 @@ body .uk-button-primary:focus, body .uk-button-primary:hover {
 @media screen and (min-width:800px) {
     div.page__banner .page__slider {
         content: '';
-        background: #aa0817;
+        background: ##F8F026;
         position: absolute;
         width: 45%;
         height: 100%;
@@ -187,7 +189,7 @@ div.uk-navbar-dropdown ul li {
 }
 
 div.uk-navbar-dropdown ul li:hover {
-    background: #aa0817;
+    background: ##F8F026;
     transition: .3s;
     color: #fff;
 }
@@ -284,19 +286,19 @@ div.hero__heading h1 {
 }
 
 span.uk-margin-small-right.uk-icon-button.uk-icon {
-    background: #58d0da;
-    color: white;
+    background: #F8F026;
+    color: #000;
 }
 
 .contact__page li a {
-    color: #222;
+    color: #ccc;
 }
 
 /* SINGLE SERVICE PAGE */
 
 div.box-top {
     position: absolute;
-    background: #aa0817;
+    background: ##F8F026;
     width: 200px;
     left: -50px;
     z-index: -1;
@@ -348,7 +350,7 @@ footer.footer a {
 }
 
 footer.footer a:hover {
-    color: #58d0da;
+    color: #F8F026;
     text-decoration: none;
     transition: .3s ease;
 }
@@ -362,17 +364,17 @@ footer.footer svg {
 }
 
 .footer__social .uk-icon-button {
-    background: #58d0da;
+    background: #F8F026;
     color: #fff;
 }
 
 .footer__social .uk-icon-button:hover {
-    background: #58d0da;
+    background: #F8F026;
     color: #fff;
 }
 
 footer.footer svg:hover {
-    color: #aa0817;
+    color: ##F8F026;
     transition: .3s;
 }
 

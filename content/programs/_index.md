@@ -1,3 +1,3 @@
 +++
-title = "Programs"
+title = "DAC Athletic Programs"
 +++

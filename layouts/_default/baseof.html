@@ -1,19 +1,32 @@
 {{ partial "global/head" . }}
-<div class="uk-position-top full-nav-wrapper" style="z-index: 1;">
-    {{ partial "global/navbar" . }}
+<div class="uk-position-relative">
+    <div class="uk-cover-container">
+        <img src="https://res.cloudinary.com/hungryram19/image/upload/v1635197169/darius-clark/page-banner.jpg" alt="" style="filter: grayscale();" uk-cover>
+        <canvas height="300"></canvas>
+    </div>
+    <div class="uk-position-top">
+        {{ partial "global/navbar" . }}
+    </div>
 </div>
-<div class="uk-background-norepeat uk-background-cover uk-background-center-center uk-flex uk-flex-middle uk-height-large"  style="background:url(https://res.cloudinary.com/hungryram19/image/upload/v1633155566/aj-garcia/dots3.jpg) repeat center;background-size:cover" uk-parallax="bgy: -100">
-    <div class="uk-width-1-1">
-        <div class="uk-container uk-container-large uk-text-center">
-            <div>
-                <h1 class="uk-text-large">{{ .Title }}</h1>
-                <h2 class="uk-h1">{{ .Params.heading }}</h2>
-                <hr class="uk-divider-small">
+<main>
+<div class="uk-section" style="padding-bottom: 0;">
+    <div class="uk-container uk-light">
+        <div class="uk-flex uk-flex-center">
+            <div class="uk-width-1-1">
+                <div class="uk-card">
+                    <h1 uk-scrollspy="uk-animation-slide-left-medium" style="font-size: 4rem;text-transform: uppercase;">{{ .Title }}</h1>
+                    <div class="uk-margin-xlarge-left" uk-scrollspy="uk-animation-slide-right-medium">
+                        <p>{{ .Params.body }}</p>
+                        {{ if not .Params.hide_button }}
+                        <a href="/contact" class="uk-link-text">Have any questions? Get in touch</a>
+                        <span uk-icon="icon: arrow-right;ratio:2" style="color:#fff;"></span>
+                        {{ end }}
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<main>
 {{ block "main" . }}
 
 {{ end }}
