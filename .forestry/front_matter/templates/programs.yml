@@ -21,6 +21,15 @@ fields:
   config:
     maxSize: 64
   label: Image
+- name: information
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Information
 pages:
 - content/programs/bunny-crew.md
 - content/programs/kangaroo-club.md
