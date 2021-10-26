@@ -1,12 +1,18 @@
 {{ define "main" }}
-<div class="uk-section">
+<div class="uk-section uk-section-large">
     <div class="uk-container">
-        <div class="uk-grid uk-child-width-1-2@s">
+        <div class="uk-grid uk-child-width-1-2@s uk-flex uk-flex-middle uk-grid-large">
             <div class="uk-card">
                 <img src="https://res.cloudinary.com/hungryram19/image/upload/v1634960320/darius-clark/run.jpg" alt="">
             </div>
             <div class="uk-card">
-                <h2></h2>
+                <div>
+                    {{ .Params.information | markdownify }}
+                </div>
+                <div class="uk-margin-medium-top">
+                    <a href="/contact" class="uk-link-text hr-text-underline uk-white">Get Started <span uk-icon="icon: arrow-right;ratio:2" style="color:#fff;"></span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

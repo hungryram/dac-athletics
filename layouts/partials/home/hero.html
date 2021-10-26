@@ -8,33 +8,41 @@
 		margin: 0 auto;
 		width: 60%;
 		top: 30%;
-		opacity: .1;
 	}
 
 	.profile-banner {
 		position: relative;
 		z-index: 2;
 	}
+
+	@media screen and (max-width: 1000px) {
+		.profile-banner {
+		position: relative;
+		z-index: 2;
+		max-width: unset;
+		width: 1000px;
+	}
+	}
 </style>
-<!-- <div class="uk-visible@m uk-background-norepeat uk-background-cover uk-background-center-center uk-flex uk-flex-middle"
+<div class="uk-background-norepeat uk-background-cover uk-background-center-center uk-flex uk-flex-middle"
 	uk-height-viewport
-	style="background:url(https://res.cloudinary.com/hungryram19/image/upload/v1634015279/darius-clark/black-banner.jpg) no-repeat center;background-size:cover">
+	style="background:url(https://res.cloudinary.com/hungryram19/image/upload/v1634015279/darius-clark/black-banner.jpg) no-repeat center;background-size:cover;overflow:hidden">
 	<div style="position:relative;display: flex; align-items:center;justify-content:center;width:100%">
 		<div class="uk-container uk-container-large" style="position:relative;display:flex;align-items:center">
-			<img src="https://res.cloudinary.com/hungryram19/image/upload/v1634016273/darius-clark/dac-white-logo.png" alt="" class="bg-logo" uk-parallax="y: 200; easing: 2">
+			<img src="https://res.cloudinary.com/hungryram19/image/upload/v1634016273/darius-clark/dac-white-logo.png" alt="" class="bg-logo" uk-scrollspy="uk-animation-scale-down">
 			<img src="https://res.cloudinary.com/hungryram19/image/upload/v1634015280/darius-clark/darius.png" alt="" class="profile-banner">
 		</div>
 	</div>
-</div> -->
+</div>
 
 
 
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: false">
+<!-- <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: false">
 
     <ul class="uk-slideshow-items" uk-height-viewport>
         <li>
             <img src="https://res.cloudinary.com/hungryram19/image/upload/v1634015279/darius-clark/black-banner.jpg" alt="" uk-cover>
-            <div class="uk-position-bottom uk-text-center uk-light">
+            <div class="uk-position-center uk-text-center uk-light">
 				<img src="https://res.cloudinary.com/hungryram19/image/upload/v1634016273/darius-clark/dac-white-logo.png" alt="" class="bg-logo" uk-scrollspy="uk-animation-scale-down">
 				<img src="https://res.cloudinary.com/hungryram19/image/upload/v1634015280/darius-clark/darius.png" alt="" class="profile-banner" uk-parallax="blur: 10; blur: 50;">
             </div>
@@ -47,4 +55,4 @@
             </div>
         </li>
     </ul>
-</div>
+</div> -->

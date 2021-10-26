@@ -33,8 +33,9 @@
 					</div>
 					<div class="uk-navbar-right">
                         <ul class="uk-navbar-nav uk-margin-medium-right">
-                            <li><a href="{{ .URL | absURL }}">Login</a></li>
-
+                            <li class="uk-inline"><a href="{{ .URL | absURL }}">Login</a></li>
+                            <li class="uk-inline"><a href="{{ .URL | absURL }}">Register</a></li>
+                            
                         </ul>
 					</div>
 				</nav>
@@ -46,27 +47,27 @@
 
 <!-- mobile -->
 <div>
-    <nav class="uk-navbar uk-hidden@m uk-box-shadow-small uk-navbar-transparent" style="padding: 0 15px;">
-        <div class="uk-navbar-left">
+    <nav class="uk-navbar uk-hidden@m uk-box-shadow-small uk-navbar-transparent">
+        <div class="uk-navbar-left" style="align-items: normal;">
             <a href="{{ .Site.BaseURL }}">
                 <img src="{{ .Site.Data.appearance.branding.logo }}" alt="{{ .Site.Data.profile.company_name }}" width="60">
             </a>
         </div>
         <div class="uk-navbar-right">
             <a class="uk-navbar-toggle" href="#modal-full" uk-toggle>
-                <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon"><rect y="9" width="15" height="2"></rect><rect y="3" width="20" height="2"></rect><rect y="15" width="10" height="2"></rect></svg>
+                <svg fill="#fff" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon"><rect y="9" width="15" height="2"></rect><rect y="3" width="20" height="2"></rect><rect y="15" width="10" height="2"></rect></svg>
             </a>
         </div>
     </nav>
-    </div>
+</div>
 
 
 
 <div id="modal-full" class="uk-modal-full uk-modal mobile__wrapper" uk-modal>
-    <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+    <div class="uk-modal-dialog uk-flex uk-flex-left" uk-height-viewport>
         <button class="uk-modal-close-full" type="button" uk-close></button>
 
-        <ul class="uk-nav-default uk-nav-parent-icon uk-margin-auto-vertical uk-text-center" uk-nav>
+        <ul class="uk-nav-default uk-nav-parent-icon uk-margin-auto-vertical uk-text-center uk-margin-large-left" uk-nav uk-scrollspy="cls:uk-animation-slide-left;delay:500;repeat: true">
             {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
             {{ if .HasChildren }}
