@@ -42,7 +42,7 @@
                         <small class="uk-white">&copy; Copyright {{ dateFormat "2006" now }}, {{ .Site.Data.profile.company_name }}  &middot; <a href="https://hungryram.com" target="_blank" class="uk-white" rel="nofollow">Design by Hungry Ram</a></small>
                     </div>
                     <div>
-                        <ul class="hr-legals uk-padding-remove uk-text-right">
+                        <ul class="hr-legals uk-padding-remove uk-text-right@s">
                             {{ range where $.Site.Pages.ByWeight "Type" "legal" }}
                             <li class="uk-display-inline uk-margin-medium-right"><small><a href="{{ .Permalink }}" class="uk-white">{{ .Title }}</a></small></li>
                             {{ end }}
