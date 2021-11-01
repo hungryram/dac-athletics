@@ -45,6 +45,10 @@ body .uk-heading-xlarge {
 }
 }
 
+div.uk-section {
+    background: black;
+}
+
 .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6 {
     color: #dfdfdf!important;
 }
@@ -56,7 +60,6 @@ body .uk-heading-xlarge {
 body {
     font-family: 'Mulish', sans-serif;
     line-height: 27px;
-    background: #000;
 }
 
 html body {
