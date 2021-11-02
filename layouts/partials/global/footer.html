@@ -15,6 +15,16 @@
                         <ul class="uk-list uk-margin-medium-top">
                             <li><a href="" class="uk-white">{{ .Site.Data.profile.contact_information.email }}</a></li>
                             <li><a href="" class="uk-white">{{ .Site.Data.profile.contact_information.phone }}</a></li>
+                            <div class="uk-margin-medium-top">
+                                {{ if $footerSocial.facebook }}<a href="{{ $footerSocial.facebook }}" uk-icon="icon: facebook; ratio: 1.2" style="color: #fff;"></a>{{ end }}
+                                {{ if $footerSocial.instagram }}<a href="{{ $footerSocial.instagram }}" uk-icon="icon: instagram; ratio: 1.2" style="color: #fff;"></a>{{ end }}
+                                {{ if $footerSocial.linkedin }}<a href="{{ $footerSocial.linkedin }}" uk-icon="icon: linkedin; ratio: 1.2" style="color: #fff;"></a>{{ end }}
+                                {{ if $footerSocial.pinterest }}<a href="{{ $footerSocial.pinterest }}" uk-icon="icon: pinterest; ratio: 1.2" style="color: #fff;"></a>{{ end }}
+                                {{ if $footerSocial.twitter }}<a href="{{ $footerSocial.twitter }}" uk-icon="icon: twitter; ratio: 1.2" style="color: #fff;"></a>{{ end }}
+                                {{ if $footerSocial.youtube }}<a href="{{ $footerSocial.youtube }}" uk-icon="icon: youtube; ratio: 1.2" style="color: #fff;"></a>{{ end }}
+                                {{ if $footerSocial.tiktok }}<a href="{{ $footerSocial.tiktok }}" uk-icon="icon: tiktok; ratio: 1.2" style="color: #fff;"></a>{{ end }}
+                                {{ if $footerSocial.yelp }}<a href="{{ $footerSocial.yelp }}" uk-icon="icon: yelp; ratio: 1.2" style="color: #fff;"></a>{{ end }}
+                            </div>
                         </ul>
                     </div>
                 </div>
