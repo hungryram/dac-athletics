@@ -8,7 +8,7 @@
         <div class="uk-grid-large uk-grid">
             <div class="uk-width-1-2@s">
                 <div class="uk-card">
-                    <h3 class="uk-margin-medium-bottom">Get in touch</h3>
+                    <h3 class="uk-margin-medium-bottom">Get in Touch</h3>
                     <ul class="uk-list contact__page">
                         {{ if $footerContact.phone }}<li><a href="tel:{{ $footerContact.phone }}">{{ $footerContact.phone }}</a></li>{{ end }}
                         {{ if $footerContact.cell }}<li><a href="tel:{{ $footerContact.cell }}">{{ $footerContact.cell }}</a></li>{{ end }}
@@ -16,21 +16,21 @@
                         {{ if $footerContact.address }}<li><a href="{{ if $footerContact.google_page_link }}{{ $footerContact.google_page_link }}{{ else }}https://www.google.com/maps/place/{{ $footerContact.address }},+{{ $footerContact.city }},+{{ $footerContact.state }}{{ end }}">{{ $footerContact.address }}, {{ $footerContact.city }}, {{ $footerContact.state }} {{ $footerContact.zip_code }}</a></li>{{ end }}                    
                     </ul>
                     <div class="footer__social">
-                        <h3>Follow us</h3>
-                        {{ if $footerSocial.facebook }}<a href="{{ $footerSocial.facebook }}" uk-icon="icon: facebook; ratio: 1.2" style="color: #F8F026;"></a>{{ end }}
-                        {{ if $footerSocial.instagram }}<a href="{{ $footerSocial.instagram }}" uk-icon="icon: instagram; ratio: 1.2" style="color: #F8F026;"></a>{{ end }}
-                        {{ if $footerSocial.linkedin }}<a href="{{ $footerSocial.linkedin }}" uk-icon="icon: linkedin; ratio: 1.2" style="color: #F8F026;"></a>{{ end }}
-                        {{ if $footerSocial.pinterest }}<a href="{{ $footerSocial.pinterest }}" uk-icon="icon: pinterest; ratio: 1.2" style="color: #F8F026;"></a>{{ end }}
-                        {{ if $footerSocial.twitter }}<a href="{{ $footerSocial.twitter }}" uk-icon="icon: twitter; ratio: 1.2" style="color: #F8F026;"></a>{{ end }}
-                        {{ if $footerSocial.youtube }}<a href="{{ $footerSocial.youtube }}" uk-icon="icon: youtube; ratio: 1.2" style="color: #F8F026;"></a>{{ end }}
-                        {{ if $footerSocial.tiktok }}<a href="{{ $footerSocial.tiktok }}" uk-icon="icon: tiktok; ratio: 1.2" style="color: #F8F026;"></a>{{ end }}
-                        {{ if $footerSocial.yelp }}<a href="{{ $footerSocial.yelp }}" uk-icon="icon: yelp; ratio: 1.2" style="color: #F8F026;"></a>{{ end }}
+                        <h3>Follow Me</h3>
+                        {{ if $footerSocial.facebook }}<a href="{{ $footerSocial.facebook }}" uk-icon="icon: facebook; ratio: 1.2" style="color: #fff;"></a>{{ end }}
+                        {{ if $footerSocial.instagram }}<a href="{{ $footerSocial.instagram }}" uk-icon="icon: instagram; ratio: 1.2" style="color: #fff;"></a>{{ end }}
+                        {{ if $footerSocial.linkedin }}<a href="{{ $footerSocial.linkedin }}" uk-icon="icon: linkedin; ratio: 1.2" style="color: #fff;"></a>{{ end }}
+                        {{ if $footerSocial.pinterest }}<a href="{{ $footerSocial.pinterest }}" uk-icon="icon: pinterest; ratio: 1.2" style="color: #fff;"></a>{{ end }}
+                        {{ if $footerSocial.twitter }}<a href="{{ $footerSocial.twitter }}" uk-icon="icon: twitter; ratio: 1.2" style="color: #fff;"></a>{{ end }}
+                        {{ if $footerSocial.youtube }}<a href="{{ $footerSocial.youtube }}" uk-icon="icon: youtube; ratio: 1.2" style="color: #fff;"></a>{{ end }}
+                        {{ if $footerSocial.tiktok }}<a href="{{ $footerSocial.tiktok }}" uk-icon="icon: tiktok; ratio: 1.2" style="color: #fff;"></a>{{ end }}
+                        {{ if $footerSocial.yelp }}<a href="{{ $footerSocial.yelp }}" uk-icon="icon: yelp; ratio: 1.2" style="color: #fff;"></a>{{ end }}
                     </div>
                 </div>
             </div>
             <div class="uk-width-1-2@s">
                 <div class="uk-card">
-                    <h3>Send an email</h3>
+                    <h3>Send an Email</h3>
                     <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" class="uk-grid-small" uk-grid action="/thank-you">
                         <input name="bot-field" type="hidden" />
                         <input type="hidden" name="Subject" value="Website Contact Form">
