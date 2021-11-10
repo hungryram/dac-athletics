@@ -12,10 +12,10 @@
                     <ul class="uk-list contact__page">
                         {{ if $footerContact.phone }}<li><a href="tel:{{ $footerContact.phone }}">{{ $footerContact.phone }}</a></li>{{ end }}
                         {{ if $footerContact.cell }}<li><a href="tel:{{ $footerContact.cell }}">{{ $footerContact.cell }}</a></li>{{ end }}
-                        {{ if $footerContact.email }}<li><a href="tel:{{ $footerContact.email }}">{{ $footerContact.email }}</a></li>{{ end }}
+                        {{ if $footerContact.email }}<li><a href="mailto:{{ $footerContact.email }}">{{ $footerContact.email }}</a></li>{{ end }}
                         {{ if $footerContact.address }}<li><a href="{{ if $footerContact.google_page_link }}{{ $footerContact.google_page_link }}{{ else }}https://www.google.com/maps/place/{{ $footerContact.address }},+{{ $footerContact.city }},+{{ $footerContact.state }}{{ end }}">{{ $footerContact.address }}, {{ $footerContact.city }}, {{ $footerContact.state }} {{ $footerContact.zip_code }}</a></li>{{ end }}                    
                     </ul>
-                    <div class="footer__social">
+                    <div class="footer__social uk-margin-medium-bottom">
                         <h3>Follow Me</h3>
                         {{ if $footerSocial.facebook }}<a href="{{ $footerSocial.facebook }}" uk-icon="icon: facebook; ratio: 1.2" style="color: #fff;"></a>{{ end }}
                         {{ if $footerSocial.instagram }}<a href="{{ $footerSocial.instagram }}" uk-icon="icon: instagram; ratio: 1.2" style="color: #fff;"></a>{{ end }}
