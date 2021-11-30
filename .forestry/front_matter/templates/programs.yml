@@ -31,6 +31,4 @@ fields:
       format: markdown
   label: Information
 pages:
-- content/programs/bunny-crew.md
 - content/programs/kangaroo-club.md
-- content/programs/rehab-program.md
